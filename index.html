@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+<!-- Question 1
+
+
+    <title>Greeting Program</title>
+    <script>
+        // Prompt the user for their first name
+        var firstName = prompt("Please enter your first name:");
+
+        // Prompt the user for their last name
+        var lastName = prompt("Please enter your last name:");
+
+        // Merge the first and last names into a new variable
+        var fullName = firstName + " " + lastName;
+
+        // Greet the user using their full name
+        alert("Hello, " + fullName + "!");
+    </script> -->
+
+
+
+    <!-- Question 2
+
+
+<h1>Enter Your Favorite Mobile Phone Model</h1>
+<input type="text" id="phoneModel" placeholder="Type here...">
+<button onclick="displayLength()">Submit</button>
+<p id="result"></p>
+<script>displayLength() {
+    // Get the value of the input field
+    var phoneModel = document.getElementById("phoneModel").value;
+    // Calculate the length of the input
+    var length = phoneModel.length;
+    // Display the length in the paragraph with id "result"
+    document.getElementById("result").innerText = "Length of input: " + length;
+}</script> 
+
+<script src="script.js"></script> -->
+
+
+<!-- Question 3
+
+<h1>Find the Index of 'n' in "Pakistani"</h1>
+    <p id="result"></p>
+
+    <script>
+        // The word to search in
+        const word = "Pakistani";
+        // The letter to find
+        const letter = "n";
+        // Find the index of the letter
+        const index = word.indexOf(letter);
+        // Display the result
+        document.getElementById("result").innerText = `The index of '${letter}' in '${word}' is ${index}.`;
+    </script> -->
+
+
+    <!-- Question 4
+
+
+<h1>Find Last Index of 'l' in "Hello World"</h1>
+<p id="result"></p>
+
+<script>
+    // The word to search in
+    const word = "Hello World";
+    // The letter to find the last index of
+    const letter = "l";
+    // Find the last index of the letter
+    const lastIndex = word.lastIndexOf(letter);
+    // Display the result in the browser
+    document.getElementById("result").innerText = `The last index of '${letter}' in "${word}" is ${lastIndex}.`;
+</script> -->
+
+  <!-- Question 5
+
+
+<h1>Character at 3rd Index</h1>
+    <p id="result"></p>
+
+    <script>
+        // The word to check
+        var word = "Pakistani";
+        // Find the character at the 3rd index (index starts from 0)
+        var charAtThirdIndex = word.charAt(3);
+        // Display the result in the paragraph with id "result"
+        document.getElementById("result").innerText = "The character at the 3rd index is: " + charAtThirdIndex;
+    </script> -->
+
+
+    <!-- Question 6
+
+
+    <title>String Concatenation Example</title>
+    <script>
+        let str = "Q1";
+        let repeatedStr = str.concat(str, str);
+        document.write(repeatedStr); // Output: Q1Q1Q1
+    </script> -->
+
+
+    <!-- Question 7
+
+    <title>Replace Text</title>
+    <p id="original">Original Word: Hyderabad</p>
+    <p id="result"></p>
+
+    <script>
+        // Original word
+        let originalWord = "Hyderabad";
+        
+        // Replace "Hyder" with "Islam"
+        let newWord = originalWord.replace("Hyder", "Islam");
+        
+        // Display the result
+        document.getElementById("result").innerText = "New Word: " + newWord;
+    </script> -->
+
+
+    <!-- Question 8
+
+
+    <title>Replace String Example</title>
+    <p id="original"></p>
+    <p id="modified"></p>
+
+    <script>
+        var message = "Ali and Sami are best friends. They play cricket and football together.";
+        
+        // Display the original message
+        document.getElementById("original").innerText = "Original: " + message;
+        
+        // Replace all occurrences of "and" with "&"
+        var modifiedMessage = message.replace(/and/g, "&");
+        
+        // Display the modified message
+        document.getElementById("modified").innerText = "Modified: " + modifiedMessage;
+    </script> -->
+
+
+    <!-- Question 9
+
+
+    <title>String to Number Conversion</title>
+    <p id="stringValue"></p>
+    <p id="numberValue"></p>
+
+    <script>
+        // The string to be converted
+        let str = "472";
+
+        // Convert the string to a number
+        let num = Number(str);
+
+        // Display the values and their types
+        document.getElementById("stringValue").innerHTML = `String value: ${str} (Type: ${typeof str})`;
+        document.getElementById("numberValue").innerHTML = `Number value: ${num} (Type: ${typeof num})`;
+    </script> -->
+
+
+    <!-- Question 10
+
+
+    <title>Convert to Uppercase</title>
+    <h1>Convert Input to Uppercase</h1>
+    <input type="text" id="userInput" placeholder="Type something...">
+    <button onclick="convertToUppercase()">Convert</button>
+    <p id="output"></p>
+
+    <script>
+        function convertToUppercase() {
+            // Get the user input
+            let input = document.getElementById('userInput').value;
+            // Convert the input to uppercase
+            let uppercaseInput = input.toUpperCase();
+            // Display the uppercase input
+            document.getElementById('output').innerText = uppercaseInput;
+        }
+    </script> -->
+
+
+    <!-- Question 11
+
+
+    <title>Title Case Converter</title>
+    <h1>Title Case Converter</h1>
+    <input type="text" id="userInput" placeholder="Enter text here">
+    <button onclick="convertToTitleCase()">Convert</button>
+    <p id="output"></p>
+
+    <script>
+        function convertToTitleCase() {
+            let input = document.getElementById('userInput').value;
+            let titleCased = input.toLowerCase().split(' ').map(function(word) {
+                return word.charAt(0).toUpperCase() + word.slice(1);
+            }).join(' ');
+            document.getElementById('output').innerText = titleCased;
+        }
+    </script> -->
+
+
+    <!-- Question 12
+
+
+    <title>Convert Number to String</title>
+    <p id="result"></p>
+
+    <script>
+        var num = 35.36;
+        var str = num.toString().replace(".", "");
+        document.getElementById("result").innerText = str;
+    </script> -->
+
+
+    <!-- Question 13
+
+
+    <title>Enter A Valid Username</title>
+    <h2>Enter your username:</h2>
+    <input type="text" id="username" placeholder="Username">
+    <button onclick="validateUsername()">Submit</button>
+    <p id="message"></p>
+
+    <script>
+        function validateUsername() {
+            var username = document.getElementById("username").value;
+            var message = document.getElementById("message");
+            var invalidChars = ['@', '.', ',', '!'];
+
+            for (var i = 0; i < invalidChars.length; i++) {
+                if (username.includes(invalidChars[i])) {
+                    message.textContent = "Invalid username. Please avoid using @, ., ,, or !";
+                    return;
+                }
+            }
+            message.textContent = "Username is valid!";
+        }
+    </script> -->
+
+
+    <!-- Question 14
+
+
+    <title>Search Array</title>
+    <h1>Search in Array</h1>
+    <input type="text" id="searchInput" placeholder="Enter item to search">
+    <button onclick="searchItem()">Search</button>
+    <p id="result"></p>
+
+    <script>const array = ["cake", "apple pie", "cookie", "chips", "patties"];
+
+        function searchItem() {
+            const input = document.getElementById("searchInput").value.toLowerCase();
+            const result = array.map(item => item.toLowerCase()).includes(input);
+            
+            if (result) {
+                document.getElementById("result").innerText = "Item found in the list!";
+            } else {
+                document.getElementById("result").innerText = "Item not found in the list.";
+            }
+        }
+        </script> -->
+
+
+        <!-- Question 15
+
+
+        <title>Password Validator</title>
+            <h2>Password Validator</h2>
+            <form onsubmit="return validatePassword()">
+                <label for="password">Enter Password:</label>
+                <input type="password" id="password" name="password" required>
+                <button type="submit">Submit</button>
+            </form>
+            <p id="message"></p>
+    
+        <script>
+            function validatePassword() {
+                const password = document.getElementById("password").value;
+                const message = document.getElementById("message");
+    
+                // Check if password is at least 6 characters long
+                if (password.length < 6) {
+                    message.textContent = "Password must be at least 6 characters long.";
+                    return false;
+                }
+    
+                // Check if password starts with a number
+                if (!isNaN(password.charAt(0))) {
+                    message.textContent = "Password should not start with a number.";
+                    return false;
+                }
+    
+                // Check if password contains both alphabets and numbers
+                const hasAlphabet = /[a-zA-Z]/.test(password);
+                const hasNumber = /[0-9]/.test(password);
+    
+                if (!hasAlphabet || !hasNumber) {
+                    message.textContent = "Password must contain both alphabets and numbers.";
+                    return false;
+                }
+    
+                message.textContent = "Password is valid!";
+                return true;
+            }
+        </script> -->
+
+
+        <!-- Question 16
+
+
+        <title>String to Array</title>
+        <h1>University of Karachi</h1>
+        <div id="arrayElements"></div>
+    
+        <script>
+            // Your string
+            var university = "University of Karachi";
+    
+            // Split the string into an array
+            var array = university.split(" ");
+    
+            // Display the elements of the array in the browser
+            var display = document.getElementById("arrayElements");
+            array.forEach(function(element) {
+                var p = document.createElement("p");
+                p.textContent = element;
+                display.appendChild(p);
+            });
+        </script> -->
+
+
+        <!-- Question 17
+
+
+        <title>Last Character Display</title>
+        <h2>Enter a string:</h2>
+    <input type="text" id="userInput" placeholder="Type something...">
+    <button onclick="displayLastCharacter()">Show Last Character</button>
+    <p id="result"></p>
+
+    <script>
+        function displayLastCharacter() {
+            // Get the user input
+            let input = document.getElementById('userInput').value;
+            // Get the last character
+            let lastChar = input.charAt(input.length - 1);
+            // Display the last character
+            document.getElementById('result').innerText = 'Last character: ' + lastChar;
+        }
+    </script -->
+
+
+    Question 18
+    
+
+    <title>Count Occurrences</title>
+    <p id="text">The quick brown fox jumps over the lazy dog</p>
+    <button onclick="countOccurrences()">Count 'the'</button>
+    <p id="result"></p>
+
+    <script>
+        function countOccurrences() {
+            // Get the text from the paragraph
+            let text = document.getElementById("text").innerText.toLowerCase();
+            
+            // Define the word to count
+            let word = "the";
+            
+            // Use a regular expression to find all occurrences of the word
+            let regex = new RegExp("\\b" + word + "\\b", "g");
+            let matches = text.match(regex);
+            
+            // Count the matches
+            let count = matches ? matches.length : 0;
+            
+            // Display the result
+            document.getElementById("result").innerText = "Occurrences of 'the': " + count;
+        }
+    </script>
+</body>
+</html>
